@@ -1,0 +1,40 @@
+{
+  "name": "generator-addon-library",
+  "version": "1.0.0",
+  "description": "Create Angular component library from ngX-Rocket apps",
+  "repository": "ngx-rocket/addon-library",
+  "main": "./generators/app/index.js",
+  "scripts": {
+    "test": "eslint generators/app/*.js",
+    "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "ngx-rocket-addon",
+    "library",
+    "deploy"
+  ],
+  "author": "Yohan Lasorsa",
+  "license": "MIT",
+  "homepage": "https://github.com/ngx-rocket/addon-library",
+  "bugs": {
+    "url": "https://github.com/ngx-rocket/addon-library/issues"
+  },
+  "dependencies": {
+    "@ngx-rocket/core": "^2.1.0",
+    "chalk": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-xo-space": "^0.16.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space/esnext"
+  },
+  "files": [
+    "generators/app"
+  ]
+}

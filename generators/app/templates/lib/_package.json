@@ -1,0 +1,15 @@
+{
+  "name": "<%= props.libraryName %>",
+  "version": "1.0.0",
+  "description": "<%= props.libraryDescription %>",
+  "keywords": [
+    "angular",
+    "library"
+  ],
+  "author": "<%= props.libraryAuthor %>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^4.2.6",
+    "@angular/common": "^4.2.6"
+  }
+}

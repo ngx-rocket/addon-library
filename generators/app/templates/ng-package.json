@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "lib": {
+    "src": "lib",
+    "dest": "dist/lib",
+    "workingDirectory": ".tmp",
+    "entryFile": "lib/public_api.ts"
+  }
+}
