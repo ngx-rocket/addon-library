@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "build:library": "ng-packagr -p ng-package.json"
-  },
-  "devDependencies": {
-    "ng-packagr": "^1.2.1"
-  }
-}

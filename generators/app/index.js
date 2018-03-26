@@ -16,7 +16,7 @@ class AddonLibraryGenerator extends Generator {
 
   end() {
     if (this.props.library && !this.updating) {
-      this.log(`- $ ${chalk.green('npm run build:library')}: build the component library`);
+      this.log(`- $ ${chalk.green(`${this.packageManager} run build:library`)}: build the component library`);
     }
   }
 }
@@ -29,7 +29,7 @@ module.exports = Generator.make({
       type: 'confirm',
       name: 'library',
       message: 'Create an Angular component library?',
-      default: false
+      default: true
     },
     {
       type: 'input',
@@ -52,5 +52,8 @@ module.exports = Generator.make({
       default: 'Your name',
       when: props => props.library
     }
-  ]
+  ],
+  prefixRules: Object.assign(Generator.defaultPrefixRules, {
+    library: props => Boolean(props.library)
+  })
 });

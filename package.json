@@ -1,7 +1,7 @@
 {
   "name": "generator-addon-library",
   "version": "1.0.0",
-  "description": "Create Angular component library from ngX-Rocket apps",
+  "description": "Create Angular component library with ngX-Rocket",
   "repository": "ngx-rocket/addon-library",
   "main": "./generators/app/index.js",
   "scripts": {
@@ -21,12 +21,12 @@
     "url": "https://github.com/ngx-rocket/addon-library/issues"
   },
   "dependencies": {
-    "@ngx-rocket/core": "^2.1.0",
-    "chalk": "^2.0.1"
+    "@ngx-rocket/core": "^3.1.0",
+    "chalk": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-config-xo-space": "^0.16.0"
+    "eslint": "^4.12.1",
+    "eslint-config-xo-space": "^0.17.0"
   },
   "engines": {
     "node": ">=6.0.0"

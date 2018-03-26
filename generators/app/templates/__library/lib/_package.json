@@ -9,7 +9,7 @@
   "author": "<%= props.libraryAuthor %>",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/core": "^4.2.6",
-    "@angular/common": "^4.2.6"
+    "@angular/core": "^5.2.2",
+    "@angular/common": "^5.2.2"
   }
 }
